@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>晨岛</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+            background: url(images/晨岛3.jpg) no-repeat center center;
+            background-size: cover;
+            /* 让背景图基于容器大小伸缩 */
+            background-attachment: fixed;
+            /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 此条属性必须设置否则可能无效*/
+            background-color: #CCCCCC;
+            /* 设置背景颜色，背景图加载过程中会显示背景色 */
+        }
+
+        /* 头部标题 */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        /* 导航条 */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* 导航条链接 */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* 链接颜色修改 */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* 创建两列 */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 68%;
+        }
+
+        /* 右侧栏 */
+        .rightcolumn {
+            float: right;
+            width: 28%;
+            /* background-color: #f1f1f1; */
+            padding-left: 20px;
+        }
+
+        /* 图像部分 */
+        .fakeimg {
+            /* background-color: #aaa; */
+            box-sizing: border-box;
+            width: 80%;
+            padding: 20px;
+        }
+
+        /* 文章卡片效果 */
+        .card {
+            /* background-color: white; */
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* 列后面清除浮动 */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* 底部 */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            /* background: #ddd; */
+            margin-top: 20px;
+        }
+
+        /* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        #world {
+            border-left: 600px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            padding-left: 30px;
+            border: 2px dashed #1F4E5F;
+            font-size: larger;
+            /*width: 650px;*/
+
+        }
+
+        .dialog-bz-btnx {
+            /* float: right; */
+            text-decoration: none;
+            /* text-align: right; */
+            /* font-size: larger; */
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+<div class="header">
+  <h1>我的网页</h1>
+  <p>重置浏览器大小查看效果。</p>
+</div> -->
+    <h1>晨岛 Isle of Dawn</h1>
+    <h3>"追随钟声，前往神殿"</h3>
+    <div id="world">
+        <p>晨岛是光遇传说的起源，是光之王国的崛起，就好像童年。</p>
+        <p>晨雾朦朦，晨光氤氲，晨岛依靠着大海 。</p>
+        <p>在晨岛上，旅人们将学习冒险需要的基本技能。</p>
+        <p>从行走到奔跑，从跳跃到飞翔，</p>
+        <p>“发光小人”为你献上祝福，旅人从这一刻起接受使命蜕变成为光之后裔，</p>
+        <p>披上蕴含飞行能量的斗篷，开始正式探索这个如梦似幻的世界</p>
+        </p>
+    </div>
+
+<!-- <div class="topnav">
+  <a href="#">链接</a>
+  <a href="#">链接</a>
+  <a href="#">链接</a>
+  <a href="#" style="float:right">链接</a>
+</div> -->
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>来到晨岛</h2>
+                <h5>这是旅程的起点</h5>
+
+                <!-- <div class="fakeimg" style="height:200px;">图片</div> -->
+                <img src="images/晨岛2.jpg" />
+                <!-- <p>一些文本...</p> -->
+                <!-- <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p> -->
+            </div>
+            <div class="card">
+                <h2>就是我们的终点</h2>
+                <h3>神庙</h3>
+                <!-- <div class="fakeimg" style="height:200px;"></div> -->
+                <img src="images/晨岛1.jpg" />
+
+                <!-- <p>一些文本...</p> -->
+                <!-- <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p> -->
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>一些景点</h2>
+                <img style="float: right;height: 400px;" src="images/5.jpg" />
+                <img style="float: right;height: 400px;" src="images/1.jpg" />
+                <!-- <div class="fakeimg" style="height:200px;"><img src="images/5.jpg" alt=""></div> -->
+                <!-- <p>关于我的一些信息..</p> -->
+            </div>
+            <!-- <div class="card">
+       <h3>热门文章</h3> 
+      <div class="fakeimg"><p>图片</p></div>
+      <div class="fakeimg"><p>图片</p></div>
+      <div class="fakeimg"><p>图片</p></div>
+    </div>
+    <div class="card">
+      <h3>关注我</h3>
+      <p>一些文本...</p>
+    </div> -->
+        </div>
+    </div>
+
+    <div class="footer">
+        <h4>在这里接受使命,蜕变光之后裔</h4>
+        <a href="pages.html" class="dialog-bz-btnx"><b>——遇境 </b></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="page2.html" class="dialog-bz-btnx"><b>——下一个世界 </b></a>
+    </div>
+
+</body>
+
+</html>

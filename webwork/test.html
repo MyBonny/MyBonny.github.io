@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>雨林</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+            background: url(images/雨林2.jpg) no-repeat center center;
+            background-size: cover;
+            /* 让背景图基于容器大小伸缩 */
+            background-attachment: fixed;
+            /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 此条属性必须设置否则可能无效*/
+            background-color: #CCCCCC;
+            /* 设置背景颜色，背景图加载过程中会显示背景色 */
+        }
+
+        /* 头部标题 */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        /* 导航条 */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* 导航条链接 */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* 链接颜色修改 */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* 创建两列 */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 68%;
+        }
+
+        /* 右侧栏 */
+        .rightcolumn {
+            float: right;
+            width: 28%;
+            /* background-color: #f1f1f1; */
+            padding-left: 20px;
+        }
+
+        /* 图像部分 */
+        .fakeimg {
+            /* background-color: #aaa; */
+            box-sizing: border-box;
+            width: 80%;
+            padding: 20px;
+        }
+
+        /* 文章卡片效果 */
+        .card {
+            /* background-color: white; */
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* 列后面清除浮动 */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* 底部 */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            /* background: #ddd; */
+            margin-top: 20px;
+        }
+
+        /* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        #world {
+            border-left: 600px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            padding-left: 30px;
+            border: 2px dashed #1F4E5F;
+            font-size: larger;
+            /*width: 650px;*/
+
+        }
+
+        .dialog-bz-btnx {
+            /* float: right; */
+            text-decoration: none;
+            /* text-align: right; */
+            /* font-size: larger; */
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+<div class="header">
+  <h1>我的网页</h1>
+  <p>重置浏览器大小查看效果。</p>
+</div> -->
+    <h2> 雨林 Hidden Forest</h2>
+    <h3>"护佑心火，探索森林"</h3>
+    <div id="world">
+        <p>雨林是光之王国的拓荒中后期,</p>
+        <p>矮人面具先祖的正式名字就叫“躲猫猫拓荒者.</p>
+        <p> 在这个时期，王子在雨林深处发现了黑暗石。</p>
+        <p>这种石头可以收集光能，从此成为光之王国的重要能源。</p>
+    </div>
+
+    <!-- <div class="topnav">
+  <a href="#">链接</a>
+  <a href="#">链接</a>
+  <a href="#">链接</a>
+  <a href="#" style="float:right">链接</a>
+</div> -->
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>雨林</h2>
+                <h4>雨林看上去像是经过了一场洗劫，被砍伐的树木，连绵不断的酸雨。
+                <h5>这里是玩家们进入光遇世界第一次感受到了危险与不安，心火被灭，前路坎坷。</h5>
+                <h4>和伙伴一起前行，互相照应才能走的更远。</h4>
+
+                <!-- <div class="fakeimg" style="height:200px;">图片</div> -->
+                <img style="float:left;height: 600px;" src="images/撑伞.jpg" />
+            
+                <!-- <p>一些文本...</p> -->
+                <!-- <p>！</p> -->
+            </div>
+            <div class="card"> -->
+            <!-- <h2>就是我们的终点</h2> -->
+            
+            <!-- <img src="images/晨岛1.jpg" /> -->
+
+            
+        
+            
+
+        </div>
+
+    </div>
+    <div class="rightcolumn">
+        <div class="card">
+            <h3>“雨林不会停雨，你向前走</h3>
+            <h2>我在终点等你”</h2>
+            <img style="float: right;height: 600px;"src="images/雨林1.jpg" />
+            <!-- <img style="float: right;height: 400px;"src="images/1.jpg" /> -->
+            <!-- <div class="fakeimg" style="height:200px;"><img src="images/5.jpg" alt=""></div> -->
+            <!-- <p>关于我的一些信息..</p> -->
+        </div>
+        <!-- <div class="card">
+       <h3>热门文章</h3> 
+      <div class="fakeimg"><p>图片</p></div>
+      <div class="fakeimg"><p>图片</p></div>
+      <div class="fakeimg"><p>图片</p></div>
+    </div>
+    <div class="card">
+      <h3></h3>
+      <p>一些文本...</p>
+    </div> -->
+    </div>
+    
+    </div>
+    <h2>【静谧庭院，预告未知危险】</h2>
+    <p>跃下雨林小广场，跟随白鸟的指引，玩家将来到雨林的第一个场景——静谧庭院。
+        俯瞰整个场景，庭院设置了层层大门，仿佛在预示着前方未知的危险。</p>
+    <img src="images/雨林5.jpg" alt="">
+    <h2>【荧光森林，遇见神奇生物】</h2>
+    <p>遮云蔽日的灰暗森林与莹莹发光的光之生物交织成一幅光与暗奇妙融合的景象。
+        层层叠叠的光菇点缀在森林之间，旅人可通过光菇补充能量飞往高处。</p>
+        <img src="images/雨林6.jpg" alt="">
+    <h2>【密林遗迹，探索王国秘密】</h2>
+    <p>雨林神庙的入口在密林遗迹的高处，玩家需要借助透明水母强大的光之能量跨越悬崖。
+        巨型水母具有一定的吸力，控制好飞行的起幅和落点去靠近水母，旅人们就可以被水母吸附住，逐个跳跃便可到达神庙。</p>
+        <img src="images/雨林7.jpg" alt="">
+    <div class="footer">
+        <h4>雨林里的蝴蝶都在默默守护你,继续前进吧</h4>
+        <a href="pages.html" class="dialog-bz-btnx"><b>——遇境 </b></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="page3.html" class="dialog-bz-btnx"><b>——下一个世界 </b></a>
+    </div>
+
+</body>
+
+</html>
