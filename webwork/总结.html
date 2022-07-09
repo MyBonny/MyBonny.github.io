@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>总结</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #3d7379;
+            background: url(images/1.jpg) no-repeat center center;
+            background-size: cover;
+            /* 让背景图基于容器大小伸缩 */
+            background-attachment: fixed;
+            /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 此条属性必须设置否则可能无效*/
+            background-color: #CCCCCC;
+            /* 设置背景颜色，背景图加载过程中会显示背景色 */
+        }
+
+        /* 头部标题 */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        /* 导航条 */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* 导航条链接 */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* 链接颜色修改 */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* 创建两列 */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 68%;
+        }
+
+        /* 右侧栏 */
+        .rightcolumn {
+            float: right;
+            width: 28%;
+            /* background-color: #f1f1f1; */
+            padding-left: 20px;
+        }
+
+        /* 图像部分 */
+        .fakeimg {
+            /* background-color: #aaa; */
+            box-sizing: border-box;
+            width: 80%;
+            padding: 20px;
+        }
+
+        /* 文章卡片效果 */
+        .card {
+            /* background-color: white; */
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* 列后面清除浮动 */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* 底部 */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            /* background: #ddd; */
+            margin-top: 20px;
+        }
+
+        /* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        #world {
+            border-left: 600px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            padding-left: 30px;
+            border: 2px dashed #1F4E5F;
+            font-size: larger;
+            /*width: 650px;*/
+
+        }
+
+        .dialog-bz-btnx {
+            /* float: right; */
+            text-decoration: none;
+            /* text-align: right; */
+            /* font-size: larger; */
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+<div class="header">
+  <h1>我的网页</h1>
+  <p>重置浏览器大小查看效果。</p>
+</div> -->
+    <h2> 光遇 Sky：Children of the Light  </h2>
+    <h3></h3>
+    <div id="world">
+        <p>这是一个关于游戏的介绍--光遇
+            《光·遇》是有关“爱与给予”的游戏。游历光之王国，感受人间的善意，获得心灵的栖息。
+            遇见的故事组成天空王国的弧光，首支玩家情感故事片，分享《光·遇》中的美好相遇。
+            光是遇见，就很美好。</p>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h1>1.成果展示</h1>
+                    <h2>1.引言页面</h2>
+                    <img src="images/SKY_20211225_174627_.jpg" />
+
+                    <!-- <p>一些文本...</p> -->
+                    <!-- <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p> -->
+                    <h2>2.这是主页面</h2>
+                    <img src="images/2-2.jpg" alt="">
+                    <h2>3.分页面</h2>
+                        <h3>1.晨岛</h3>
+
+                        <h3>2.云野</h3>
+
+                        <h3>3.雨林</h3>
+
+                        <h3>4.霞谷</h3>
+
+                        <h3>5.墓土</h3>
+
+                        <h3>6.禁阁</h3>
+
+                <h2>2.开发过程</h2>
+                    <h3>1.css样式</h3>
+                    <p> body {
+                        <br>background: url(images/diyige.jpg) no-repeat center center;
+                        <br>background-size: cover;
+                        <br>/* 让背景图基于容器大小伸缩 */
+                        <br>background-attachment: fixed;
+                        <br> /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 此条属性必须设置否则可能无效*/
+                        <br>background-color: #CCCCCC;
+                        <br>/* 设置背景颜色，背景图加载过程中会显示背景色 */
+                        <br>}
+                    </p>
+                    <p>注意：
+                        <br>（1）我们将背景图像的所有父元素高度设置为100％，只有这样，图像才能覆盖整个屏幕
+                        <br>（2） 我们通过ID(intro)为该元素设置的背景图像的 URL. 这也是显示图片的常用方式之一(这种情况下, 我们就不能通过在页面图片上点击右键来另存为…之类的了)
+                        <br>（3）我们使用了cover来设置背景的尺寸, 它将覆盖屏幕所有可用的空间
+                        <br>（4） -webkit-, -moz- , -o-前缀是为了确保在所有浏览器都正常工作. 不过现代浏览器都支持了, 所以不用也没什么问题
+                        </p>
+                    <h3>2.</h3>
+                   
+                <h2>3.遇到的问题</h2>
+                    <h3>1.</h3>
+                    <h3>2.</h3>
+
+                <h2>4.总结</h2>
+                <p>通过这次的作业，我了解到了web网站开发的过程，知道了关于HTML，css的许多知识。</p>
+                <p>这次简短的课程，我也只不过是学习了一些皮毛，关于更深层次的东西，还需继续学习和研究。
+                    小有收获，也希望在今后的学习中学到更多的知识。
+                </p>
+            </div>
+            
+
+        </div>
+
+    </div>
+   
+
+    <div class="footer">
+        <h4>MyBonny的web报告</h4>
+        <a href="https://baike.baidu.com/item/%E5%85%89%C2%B7%E9%81%87/23699529?fr=aladdin#reference-[29]-24202719-wrap">光遇</a>
+    </div>
+
+</body>
+
+</html>
